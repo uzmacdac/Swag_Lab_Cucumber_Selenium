@@ -1,10 +1,14 @@
 package swag.lab.base;
 
+import java.io.File;
 import java.io.FileInputStream;
 import java.io.IOException;
 import java.time.Duration;
 import java.util.Properties;
 
+import org.apache.commons.io.FileUtils;
+import org.openqa.selenium.OutputType;
+import org.openqa.selenium.TakesScreenshot;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.chrome.ChromeOptions;
@@ -106,7 +110,27 @@ public class BaseClass {
 				
 		return property;
 		
+	
 	}
+	
+	
+	public String getScreenshot(String test_case_name, WebDriver driver) throws IOException {
+		
+		// 
+		TakesScreenshot ts = (TakesScreenshot) driver;
+		
+		File source = ts.getScreenshotAs(OutputType.FILE);
+		
+		File destination_file = new File("D:\\Automation_Project\\Selenium_Project\\Swag_Lab\\Screenshots\\"+test_case_name+".png");
+		
+		FileUtils.copyFile(source, destination_file);
+		
+		return "D:\\Automation_Project\\Selenium_Project\\Swag_Lab\\Screenshots\\"+test_case_name+".png";
+		
+	}
+	
+	
+	
 	
 	//@BeforeMethod(alwaysRun = true)
 	public LoginPage launchApplication() throws IOException {
@@ -124,6 +148,12 @@ public class BaseClass {
 	public void tearDown() throws InterruptedException {
 		Thread.sleep(5000);
 		driver.quit();
+	}
+
+
+	public WebDriver getDriver() {
+		// TODO Auto-generated method stub
+		return driver;
 	}
 	
 	

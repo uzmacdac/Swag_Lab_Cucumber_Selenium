@@ -1,30 +1,161 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="3" total="4" passed="1" failed="0" skipped="0">
+<testng-results ignored="20" total="29" passed="7" failed="2" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2026-04-12T15:49:04 IST" name="Suite" finished-at="2026-04-12T15:49:09 IST" duration-ms="5319">
+  <suite started-at="2026-04-12T17:33:30 IST" name="Suite" finished-at="2026-04-12T17:33:41 IST" duration-ms="10424">
     <groups>
       <group name="Regression">
-        <method signature="LoginTest.invalidLoginPasswordRequired()[pri:0, instance:swag.lab.tests.LoginTest@1c9b0314]" name="invalidLoginPasswordRequired" class="swag.lab.tests.LoginTest"/>
+        <method signature="InventoryTests.verifyAllProductsDisplayed()[pri:0, instance:swag.lab.tests.InventoryTests@53bd8fca]" name="verifyAllProductsDisplayed" class="swag.lab.tests.InventoryTests"/>
+        <method signature="InventoryTests.verifyCartPersistenceAfterRefresh()[pri:0, instance:swag.lab.tests.InventoryTests@53bd8fca]" name="verifyCartPersistenceAfterRefresh" class="swag.lab.tests.InventoryTests"/>
+        <method signature="InventoryTests.verifyMultipleProductsAddToCart()[pri:0, instance:swag.lab.tests.InventoryTests@53bd8fca]" name="verifyMultipleProductsAddToCart" class="swag.lab.tests.InventoryTests"/>
+        <method signature="InventoryTests.verifyPageTitle()[pri:0, instance:swag.lab.tests.InventoryTests@53bd8fca]" name="verifyPageTitle" class="swag.lab.tests.InventoryTests"/>
+        <method signature="InventoryTests.verifySingleProductAddToCart()[pri:0, instance:swag.lab.tests.InventoryTests@53bd8fca]" name="verifySingleProductAddToCart" class="swag.lab.tests.InventoryTests"/>
       </group> <!-- Regression -->
       <group name="smoke">
-        <method signature="LoginTest.invalidLoginPasswordRequired()[pri:0, instance:swag.lab.tests.LoginTest@1c9b0314]" name="invalidLoginPasswordRequired" class="swag.lab.tests.LoginTest"/>
+        <method signature="InventoryTests.VerifyCartIconIsVisible()[pri:0, instance:swag.lab.tests.InventoryTests@53bd8fca]" name="VerifyCartIconIsVisible" class="swag.lab.tests.InventoryTests"/>
+        <method signature="InventoryTests.VerifyHamburgerMenuIsVisible()[pri:0, instance:swag.lab.tests.InventoryTests@53bd8fca]" name="VerifyHamburgerMenuIsVisible" class="swag.lab.tests.InventoryTests"/>
+        <method signature="InventoryTests.verifyAllProductsDisplayed()[pri:0, instance:swag.lab.tests.InventoryTests@53bd8fca]" name="verifyAllProductsDisplayed" class="swag.lab.tests.InventoryTests"/>
+        <method signature="InventoryTests.verifyPageTitle()[pri:0, instance:swag.lab.tests.InventoryTests@53bd8fca]" name="verifyPageTitle" class="swag.lab.tests.InventoryTests"/>
+        <method signature="InventoryTests.verifySingleProductAddToCart()[pri:0, instance:swag.lab.tests.InventoryTests@53bd8fca]" name="verifySingleProductAddToCart" class="swag.lab.tests.InventoryTests"/>
       </group> <!-- smoke -->
-      <group name="login">
-        <method signature="LoginTest.invalidLoginPasswordRequired()[pri:0, instance:swag.lab.tests.LoginTest@1c9b0314]" name="invalidLoginPasswordRequired" class="swag.lab.tests.LoginTest"/>
-      </group> <!-- login -->
     </groups>
-    <test started-at="2026-04-12T15:49:04 IST" name="Submit Order Test" finished-at="2026-04-12T15:49:09 IST" duration-ms="5319">
-      <class name="swag.lab.tests.LoginTest">
-        <test-method is-config="true" signature="setUp()[pri:0, instance:swag.lab.tests.LoginTest@1c9b0314]" started-at="2026-04-12T15:49:04 IST" name="setUp" finished-at="2026-04-12T15:49:08 IST" duration-ms="4012" status="PASS">
+    <test started-at="2026-04-12T17:33:30 IST" name="Submit Order Test" finished-at="2026-04-12T17:33:41 IST" duration-ms="10424">
+      <class name="swag.lab.tests.InventoryTests">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:swag.lab.tests.InventoryTests@53bd8fca]" started-at="2026-04-12T17:33:30 IST" name="setUp" finished-at="2026-04-12T17:33:36 IST" duration-ms="5331" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method signature="invalidLoginPasswordRequired()[pri:0, instance:swag.lab.tests.LoginTest@1c9b0314]" started-at="2026-04-12T15:49:08 IST" name="invalidLoginPasswordRequired" finished-at="2026-04-12T15:49:09 IST" duration-ms="979" status="PASS">
+        <test-method signature="VerifyAllElementArePresent()[pri:0, instance:swag.lab.tests.InventoryTests@53bd8fca]" started-at="2026-04-12T17:33:36 IST" name="VerifyAllElementArePresent" finished-at="2026-04-12T17:33:37 IST" duration-ms="1059" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- invalidLoginPasswordRequired -->
-      </class> <!-- swag.lab.tests.LoginTest -->
+        </test-method> <!-- VerifyAllElementArePresent -->
+        <test-method signature="VerifyCartIconIsVisible()[pri:0, instance:swag.lab.tests.InventoryTests@53bd8fca]" started-at="2026-04-12T17:33:37 IST" name="VerifyCartIconIsVisible" finished-at="2026-04-12T17:33:37 IST" duration-ms="63" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- VerifyCartIconIsVisible -->
+        <test-method signature="VerifyHamburgerMenuIsVisible()[pri:0, instance:swag.lab.tests.InventoryTests@53bd8fca]" started-at="2026-04-12T17:33:37 IST" name="VerifyHamburgerMenuIsVisible" finished-at="2026-04-12T17:33:37 IST" duration-ms="97" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- VerifyHamburgerMenuIsVisible -->
+        <test-method signature="rapidRemoveClicks()[pri:0, instance:swag.lab.tests.InventoryTests@53bd8fca]" started-at="2026-04-12T17:33:38 IST" name="rapidRemoveClicks" finished-at="2026-04-12T17:33:39 IST" duration-ms="1012" status="FAIL">
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[expected [0] but found [1]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: expected [0] but found [1]
+at org.testng.Assert.fail(Assert.java:111)
+at org.testng.Assert.failNotEquals(Assert.java:1590)
+at org.testng.Assert.assertEqualsImpl(Assert.java:150)
+at org.testng.Assert.assertEquals(Assert.java:132)
+at org.testng.Assert.assertEquals(Assert.java:1431)
+at org.testng.Assert.assertEquals(Assert.java:1395)
+at org.testng.Assert.assertEquals(Assert.java:1441)
+at swag.lab.tests.InventoryTests.rapidRemoveClicks(InventoryTests.java:224)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:687)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:995)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:741)
+at org.testng.TestRunner.run(TestRunner.java:616)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+at org.testng.TestNG.runSuites(TestNG.java:1112)
+at org.testng.TestNG.run(TestNG.java:1079)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- rapidRemoveClicks -->
+        <test-method signature="verifyAllProductsDisplayed()[pri:0, instance:swag.lab.tests.InventoryTests@53bd8fca]" started-at="2026-04-12T17:33:39 IST" name="verifyAllProductsDisplayed" finished-at="2026-04-12T17:33:39 IST" duration-ms="19" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyAllProductsDisplayed -->
+        <test-method signature="verifyCartPersistenceAfterRefresh()[pri:0, instance:swag.lab.tests.InventoryTests@53bd8fca]" started-at="2026-04-12T17:33:39 IST" name="verifyCartPersistenceAfterRefresh" finished-at="2026-04-12T17:33:39 IST" duration-ms="344" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyCartPersistenceAfterRefresh -->
+        <test-method signature="verifyMultipleProductsAddToCart()[pri:0, instance:swag.lab.tests.InventoryTests@53bd8fca]" started-at="2026-04-12T17:33:40 IST" name="verifyMultipleProductsAddToCart" finished-at="2026-04-12T17:33:40 IST" duration-ms="365" status="FAIL">
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[expected [3] but found [1]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: expected [3] but found [1]
+at org.testng.Assert.fail(Assert.java:111)
+at org.testng.Assert.failNotEquals(Assert.java:1590)
+at org.testng.Assert.assertEqualsImpl(Assert.java:150)
+at org.testng.Assert.assertEquals(Assert.java:132)
+at org.testng.Assert.assertEquals(Assert.java:1431)
+at org.testng.Assert.assertEquals(Assert.java:1395)
+at org.testng.Assert.assertEquals(Assert.java:1441)
+at swag.lab.tests.InventoryTests.verifyMultipleProductsAddToCart(InventoryTests.java:159)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:687)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:995)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:741)
+at org.testng.TestRunner.run(TestRunner.java:616)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+at org.testng.TestNG.runSuites(TestNG.java:1112)
+at org.testng.TestNG.run(TestNG.java:1079)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyMultipleProductsAddToCart -->
+        <test-method signature="verifyPageTitle()[pri:0, instance:swag.lab.tests.InventoryTests@53bd8fca]" started-at="2026-04-12T17:33:40 IST" name="verifyPageTitle" finished-at="2026-04-12T17:33:40 IST" duration-ms="79" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyPageTitle -->
+        <test-method signature="verifySingleProductAddToCart()[pri:0, instance:swag.lab.tests.InventoryTests@53bd8fca]" started-at="2026-04-12T17:33:40 IST" name="verifySingleProductAddToCart" finished-at="2026-04-12T17:33:41 IST" duration-ms="189" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifySingleProductAddToCart -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:swag.lab.tests.InventoryTests@53bd8fca]" started-at="2026-04-12T17:33:43 IST" name="tearDown" finished-at="2026-04-12T17:33:48 IST" duration-ms="5329" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- swag.lab.tests.InventoryTests -->
     </test> <!-- Submit Order Test -->
   </suite> <!-- Suite -->
 </testng-results>

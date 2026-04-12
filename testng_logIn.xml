@@ -9,6 +9,14 @@
     	</run>
   	</groups>
   	
+  	<listeners>
+		<listener class-name="swag.lab.listeners.TestListener"/>
+	</listeners>
+	
+	<listeners>
+    	<listener class-name="io.qameta.allure.testng.AllureTestNg"/>
+	</listeners>
+  
 
    <test thread-count="5" name="Submit Order Test">   
     

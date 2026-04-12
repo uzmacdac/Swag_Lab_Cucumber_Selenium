@@ -15,10 +15,14 @@ public class ScreenshotUtils {
 
     public static String captureScreenshot(WebDriver driver, String testName) {
 
-        String path = "D:\\Automation_Project\\Selenium_Project\\Swag_Lab\\Screenshots\\" + testName + ".png";
+    	String folder = "D:\\Automation_Project\\Selenium_Project\\Swag_Lab\\Screenshots\\";
+    	    
+    	new File(folder).mkdirs();   // ⭐ CREATE FOLDER
 
-        File src = ((TakesScreenshot) driver)
-                .getScreenshotAs(OutputType.FILE);
+    	String path = folder + testName + ".png";
+    	System.out.println("Take Screenshot : "+path);
+
+        File src = ((TakesScreenshot) driver).getScreenshotAs(OutputType.FILE);
 
         try {
             Files.copy(src.toPath(), Paths.get(path));
@@ -31,13 +35,18 @@ public class ScreenshotUtils {
     
     
     public static String captureScreenshotFile(WebDriver driver, String testName) {
+    	
+    	 String folder = "D:\\Automation_Project\\Selenium_Project\\Swag_Lab\\Screenshots\\";
+    	    
+    	new File(folder).mkdirs();   // ⭐ CREATE FOLDER
 
-        new File("screenshots").mkdirs();
+    	String path = folder + testName + ".png";
 
-        String path ="D:\\Automation_Project\\Selenium_Project\\Swag_Lab\\Screenshots\\" + testName + ".png";
+//        new File("screenshots").mkdirs();
+//
+//        String path ="D:\\Automation_Project\\Selenium_Project\\Swag_Lab\\Screenshots\\" + testName + ".png";
 
-        File src = ((TakesScreenshot) driver)
-                .getScreenshotAs(OutputType.FILE);
+        File src = ((TakesScreenshot) driver) .getScreenshotAs(OutputType.FILE);
 
         try {
             Files.copy(src.toPath(), Paths.get(path));
