@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Suite">
+  
+  	<listeners>
+		<listener class-name="swag.lab.listeners.TestListener"/>
+	</listeners>
+	
+	<listeners>
+    	<listener class-name="io.qameta.allure.testng.AllureTestNg"/>
+	</listeners>
+  
+   <test thread-count="5" name="Parameter Test">
+    
+    <parameter name="first_name" value="standard_user"/>
+    <parameter name="last_name" value="secret_sauce"/>
+    <parameter name="postal_code" value="401148"/>
+    
+    <classes>	     
+      <class name = "swag.lab.tests.OrderPlacedTest"/>
+    </classes>
+    
+    
+  </test> <!-- Test -->
+  
+  
+  
+</suite> <!-- Suite -->

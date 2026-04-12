@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [Surefire suite]" verbose="0">
+  <test thread-count="5" name="Surefire test(failed)" verbose="0">
+    <classes>
+      <class name="swag.lab.tests.PerformanceTest">
+        <methods>
+          <include name="verifyCartPageLoadTime"/>
+          <include name="setUp"/>
+          <include name="tearDown"/>
+          <include name="verifyXSS"/>
+        </methods>
+      </class> <!-- swag.lab.tests.PerformanceTest -->
+      <class name="swag.lab.tests.CartTest">
+        <methods>
+          <include name="tearDown"/>
+          <include name="setUp"/>
+          <include name="verifyProductDetailsLink"/>
+        </methods>
+      </class> <!-- swag.lab.tests.CartTest -->
+      <class name="swag.lab.tests.CheckoutOverviewTest">
+        <methods>
+          <include name="tearDown"/>
+          <include name="verifyDescriptionsNotEmpty"/>
+        </methods>
+      </class> <!-- swag.lab.tests.CheckoutOverviewTest -->
+      <class name="swag.lab.tests.InventoryTests">
+        <methods>
+          <include name="rapidRemoveClicks"/>
+          <include name="tearDown"/>
+          <include name="verifyMultipleProductsAddToCart"/>
+          <include name="setUp"/>
+        </methods>
+      </class> <!-- swag.lab.tests.InventoryTests -->
+    </classes>
+  </test> <!-- Surefire test(failed) -->
+</suite> <!-- Failed suite [Surefire suite] -->

@@ -1,0 +1,12 @@
+[
+	{
+		"error": "Epic sadface: Username and password do not match any user in this service"
+	},
+	{
+		"error" : "Epic sadface: Username is required"
+	},
+	{
+		"error" : "Epic sadface: Password is required"
+	}
+		
+]

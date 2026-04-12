@@ -1,0 +1,1298 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+  <meta charset='utf-8'>
+  <title>TestNG reports</title>
+
+    <link type="text/css" href="testng-reports1.css" rel="stylesheet" id="ultra" />
+    <link type="text/css" href="testng-reports.css" rel="stylesheet" id="retro" disabled="false"/>
+    <script type="text/javascript" src="jquery-3.6.0.min.js"></script>
+    <script type="text/javascript" src="testng-reports.js"></script>
+    <script type="text/javascript" src="https://www.google.com/jsapi"></script>
+    <script type='text/javascript'>
+      google.load('visualization', '1', {packages:['table']});
+      google.setOnLoadCallback(drawTable);
+      var suiteTableInitFunctions = new Array();
+      var suiteTableData = new Array();
+    </script>
+    <!--
+      <script type="text/javascript" src="jquery-ui/js/jquery-ui-1.8.16.custom.min.js"></script>
+     -->
+  </head>
+
+  <body>    <div class="top-banner-root">
+      <span class="top-banner-title-font">Test results</span>
+      <button id="button" class="button">Switch Retro Theme</button> <!-- button -->
+      <br/>
+      <span class="top-banner-font-1">1 suite, 6 failed tests</span>
+    </div> <!-- top-banner-root -->
+    <div class="navigator-root">
+      <div class="navigator-suite-header">
+        <span>All suites</span>
+        <a href="#" title="Collapse/expand all the suites" class="collapse-all-link">
+          <img src="collapseall.gif" class="collapse-all-icon">
+          </img> <!-- collapse-all-icon -->
+        </a> <!-- collapse-all-link -->
+      </div> <!-- navigator-suite-header -->
+      <div class="suite">
+        <div class="rounded-window">
+          <div class="suite-header light-rounded-window-top">
+            <a href="#" panel-name="suite-Surefire_suite" class="navigator-link">
+              <span class="suite-name border-failed">Surefire suite</span>
+            </a> <!-- navigator-link -->
+          </div> <!-- suite-header light-rounded-window-top -->
+          <div class="navigator-suite-content">
+            <div class="suite-section-title">
+              <span>Info</span>
+            </div> <!-- suite-section-title -->
+            <div class="suite-section-content">
+              <ul>
+                <li>
+                  <a href="#" panel-name="test-xml-Surefire_suite" class="navigator-link ">
+                    <span>[unset file name]</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="testlist-Surefire_suite" class="navigator-link ">
+                    <span class="test-stats">1 test</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="group-Surefire_suite" class="navigator-link ">
+                    <span>3 groups</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="times-Surefire_suite" class="navigator-link ">
+                    <span>Times</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="reporter-Surefire_suite" class="navigator-link ">
+                    <span>Reporter output</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="ignored-methods-Surefire_suite" class="navigator-link ">
+                    <span>Ignored methods</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="chronological-Surefire_suite" class="navigator-link ">
+                    <span>Chronological view</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+              </ul>
+            </div> <!-- suite-section-content -->
+            <div class="result-section">
+              <div class="suite-section-title">
+                <span>Results</span>
+              </div> <!-- suite-section-title -->
+              <div class="suite-section-content">
+                <ul>
+                  <li>
+                    <span class="method-stats">25 methods, 6 failed,  1 skipped,  18 passed</span>
+                  </li>
+                  <li>
+                    <span class="method-list-title failed">Failed methods</span>
+                    <span class="show-or-hide-methods failed">
+                      <a href="#" panel-name="suite-Surefire_suite" class="hide-methods failed suite-Surefire_suite"> (hide)</a> <!-- hide-methods failed suite-Surefire_suite -->
+                      <a href="#" panel-name="suite-Surefire_suite" class="show-methods failed suite-Surefire_suite"> (show)</a> <!-- show-methods failed suite-Surefire_suite -->
+                    </span>
+                    <div class="method-list-content failed suite-Surefire_suite">
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Surefire_suite" title="swag.lab.tests.InventoryTests" class="method navigator-link" hash-for-method="rapidRemoveClicks">rapidRemoveClicks</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Surefire_suite" title="swag.lab.tests.PerformanceTest" class="method navigator-link" hash-for-method="verifyCartPageLoadTime">verifyCartPageLoadTime</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Surefire_suite" title="swag.lab.tests.CheckoutOverviewTest" class="method navigator-link" hash-for-method="verifyDescriptionsNotEmpty">verifyDescriptionsNotEmpty</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Surefire_suite" title="swag.lab.tests.InventoryTests" class="method navigator-link" hash-for-method="verifyMultipleProductsAddToCart">verifyMultipleProductsAddToCart</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Surefire_suite" title="swag.lab.tests.CartTest" class="method navigator-link" hash-for-method="verifyProductDetailsLink">verifyProductDetailsLink</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Surefire_suite" title="swag.lab.tests.PerformanceTest" class="method navigator-link" hash-for-method="verifyXSS">verifyXSS</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content failed suite-Surefire_suite -->
+                  </li>
+                  <li>
+                    <span class="method-list-title skipped">Retried methods</span>
+                    <span class="show-or-hide-methods skipped">
+                      <a href="#" panel-name="suite-Surefire_suite" class="hide-methods skipped suite-Surefire_suite"> (hide)</a> <!-- hide-methods skipped suite-Surefire_suite -->
+                      <a href="#" panel-name="suite-Surefire_suite" class="show-methods skipped suite-Surefire_suite"> (show)</a> <!-- show-methods skipped suite-Surefire_suite -->
+                    </span>
+                    <div class="method-list-content skipped suite-Surefire_suite">
+                      <span>
+                        <img src="skipped.png" width="3%"/>
+                        <a href="#" panel-name="suite-Surefire_suite" title="swag.lab.tests.OrderPlacedTest" class="method navigator-link" hash-for-method="verifyCheckoutCompletePage(TITLE, Checkout: Complete!)">verifyCheckoutCompletePage(TITLE, Checkout: Complete!)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content skipped suite-Surefire_suite -->
+                  </li>
+                  <li>
+                    <span class="method-list-title passed">Passed methods</span>
+                    <span class="show-or-hide-methods passed">
+                      <a href="#" panel-name="suite-Surefire_suite" class="hide-methods passed suite-Surefire_suite"> (hide)</a> <!-- hide-methods passed suite-Surefire_suite -->
+                      <a href="#" panel-name="suite-Surefire_suite" class="show-methods passed suite-Surefire_suite"> (show)</a> <!-- show-methods passed suite-Surefire_suite -->
+                    </span>
+                    <div class="method-list-content passed suite-Surefire_suite">
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Surefire_suite" title="swag.lab.tests.InventoryTests" class="method navigator-link" hash-for-method="VerifyAllElementArePresent">VerifyAllElementArePresent</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Surefire_suite" title="swag.lab.tests.InventoryTests" class="method navigator-link" hash-for-method="VerifyCartIconIsVisible">VerifyCartIconIsVisible</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Surefire_suite" title="swag.lab.tests.InventoryTests" class="method navigator-link" hash-for-method="VerifyHamburgerMenuIsVisible">VerifyHamburgerMenuIsVisible</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Surefire_suite" title="swag.lab.tests.LoginTest" class="method navigator-link" hash-for-method="invalidLoginPasswordRequired">invalidLoginPasswordRequired</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Surefire_suite" title="swag.lab.tests.CheckOutInformationTest" class="method navigator-link" hash-for-method="verifyAllFieldFilled">verifyAllFieldFilled</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Surefire_suite" title="swag.lab.tests.InventoryTests" class="method navigator-link" hash-for-method="verifyAllProductsDisplayed">verifyAllProductsDisplayed</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Surefire_suite" title="swag.lab.tests.InventoryTests" class="method navigator-link" hash-for-method="verifyCartPersistenceAfterRefresh">verifyCartPersistenceAfterRefresh</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Surefire_suite" title="swag.lab.tests.LogOutTest" class="method navigator-link" hash-for-method="verifyCartResetAfterLogout">verifyCartResetAfterLogout</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Surefire_suite" title="swag.lab.tests.OrderPlacedTest" class="method navigator-link" hash-for-method="verifyCheckoutCompletePage(BACK_HOME, inventory.html)">verifyCheckoutCompletePage(BACK_HOME, inventory.html)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Surefire_suite" title="swag.lab.tests.OrderPlacedTest" class="method navigator-link" hash-for-method="verifyCheckoutCompletePage(DISPATCH_TEXT, Your order has been dispatched)">verifyCheckoutCompletePage(DISPATCH_TEXT, Your order has been dispatched)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Surefire_suite" title="swag.lab.tests.OrderPlacedTest" class="method navigator-link" hash-for-method="verifyCheckoutCompletePage(TITLE, Checkout: Complete!)">verifyCheckoutCompletePage(TITLE, Checkout: Complete!)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Surefire_suite" title="swag.lab.tests.OrderPlacedTest" class="method navigator-link" hash-for-method="verifyCheckoutCompletePage(THANK_MESSAGE, Thank you for your order!)">verifyCheckoutCompletePage(THANK_MESSAGE, Thank you for your order!)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Surefire_suite" title="swag.lab.tests.OrderPlacedTest" class="method navigator-link" hash-for-method="verifyCheckoutCompletePage(BACK_HOME, inventory.html)">verifyCheckoutCompletePage(BACK_HOME, inventory.html)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Surefire_suite" title="swag.lab.tests.OrderPlacedTest" class="method navigator-link" hash-for-method="verifyCheckoutCompletePage(TITLE, Checkout: Complete!)">verifyCheckoutCompletePage(TITLE, Checkout: Complete!)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Surefire_suite" title="swag.lab.tests.OrderPlacedTest" class="method navigator-link" hash-for-method="verifyCheckoutCompletePage(THANK_MESSAGE, Thank you for your order!)">verifyCheckoutCompletePage(THANK_MESSAGE, Thank you for your order!)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Surefire_suite" title="swag.lab.tests.OrderPlacedTest" class="method navigator-link" hash-for-method="verifyCheckoutCompletePage(DISPATCH_TEXT, Your order has been dispatched)">verifyCheckoutCompletePage(DISPATCH_TEXT, Your order has been dispatched)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Surefire_suite" title="swag.lab.tests.InventoryTests" class="method navigator-link" hash-for-method="verifyPageTitle">verifyPageTitle</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Surefire_suite" title="swag.lab.tests.InventoryTests" class="method navigator-link" hash-for-method="verifySingleProductAddToCart">verifySingleProductAddToCart</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content passed suite-Surefire_suite -->
+                  </li>
+                </ul>
+              </div> <!-- suite-section-content -->
+            </div> <!-- result-section -->
+          </div> <!-- navigator-suite-content -->
+        </div> <!-- rounded-window -->
+      </div> <!-- suite -->
+    </div> <!-- navigator-root -->
+    <div class="wrapper">
+      <div class="main-panel-root">
+        <div panel-name="suite-Surefire_suite" class="panel Surefire_suite">
+          <div class="suite-Surefire_suite-class-failed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="failed.png"/>
+              <span class="class-name">swag.lab.tests.PerformanceTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifyCartPageLoadTime">
+                  </a> <!-- verifyCartPageLoadTime -->
+                  <span class="method-name">verifyCartPageLoadTime</span>
+                  <div class="stack-trace">org.openqa.selenium.NoSuchSessionException: invalid session id: session deleted as the browser has closed the connection
+from disconnected: not connected to DevTools
+  (Session info: chrome=146.0.7680.178)
+Build info: version: &apos;4.41.0&apos;, revision: &apos;9fc754f&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.12&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [60e49d078205f163ace484856151067e, get {url=https://www.saucedemo.com/cart.html}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 146.0.7680.178, chrome: {chromedriverVersion: 146.0.7680.165 (4b989da09e1..., userDataDir: C:\Users\zaidm\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:58927}, goog:processID: 21624, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:58927/devtoo..., se:cdpVersion: 146.0.7680.178, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 60e49d078205f163ace484856151067e
+	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:169)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:142)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:223)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:604)
+	at org.openqa.selenium.remote.RemoteWebDriver.get(RemoteWebDriver.java:372)
+	at swag.lab.tests.PerformanceTest.verifyCartPageLoadTime(PerformanceTest.java:103)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 32 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifyXSS">
+                  </a> <!-- verifyXSS -->
+                  <span class="method-name">verifyXSS</span>
+                  <div class="stack-trace">org.openqa.selenium.NoSuchSessionException: invalid session id
+Build info: version: &apos;4.41.0&apos;, revision: &apos;9fc754f&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.12&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [60e49d078205f163ace484856151067e, get {url=https://www.saucedemo.com/inventory.html?test=&lt;script&gt;alert(&apos;xss&apos;)&lt;/script&gt;}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 146.0.7680.178, chrome: {chromedriverVersion: 146.0.7680.165 (4b989da09e1..., userDataDir: C:\Users\zaidm\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:58927}, goog:processID: 21624, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:58927/devtoo..., se:cdpVersion: 146.0.7680.178, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 60e49d078205f163ace484856151067e
+	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:169)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:142)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:223)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:604)
+	at org.openqa.selenium.remote.RemoteWebDriver.get(RemoteWebDriver.java:372)
+	at swag.lab.tests.PerformanceTest.verifyXSS(PerformanceTest.java:113)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 32 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Surefire_suite-class-failed -->
+          <div class="suite-Surefire_suite-class-failed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="failed.png"/>
+              <span class="class-name">swag.lab.tests.CartTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifyProductDetailsLink">
+                  </a> <!-- verifyProductDetailsLink -->
+                  <span class="method-name">verifyProductDetailsLink</span>
+                  <div class="stack-trace">java.lang.AssertionError: expected [true] but found [false]
+	at swag.lab.tests.CartTest.verifyProductDetailsLink(CartTest.java:302)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 36 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Surefire_suite-class-failed -->
+          <div class="suite-Surefire_suite-class-failed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="failed.png"/>
+              <span class="class-name">swag.lab.tests.CheckoutOverviewTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifyDescriptionsNotEmpty">
+                  </a> <!-- verifyDescriptionsNotEmpty -->
+                  <span class="method-name">verifyDescriptionsNotEmpty</span>
+                  <div class="stack-trace">org.testng.TestNGException: 
+Parameter &apos;first_name&apos; is required by @Test on method verifyDescriptionsNotEmpty but has not been marked @Optional or defined
+
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 31 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Surefire_suite-class-failed -->
+          <div class="suite-Surefire_suite-class-failed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="failed.png"/>
+              <span class="class-name">swag.lab.tests.InventoryTests</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="rapidRemoveClicks">
+                  </a> <!-- rapidRemoveClicks -->
+                  <span class="method-name">rapidRemoveClicks</span>
+                  <div class="stack-trace">java.lang.AssertionError: expected [0] but found [1]
+	at swag.lab.tests.InventoryTests.rapidRemoveClicks(InventoryTests.java:224)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 39 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifyMultipleProductsAddToCart">
+                  </a> <!-- verifyMultipleProductsAddToCart -->
+                  <span class="method-name">verifyMultipleProductsAddToCart</span>
+                  <div class="stack-trace">java.lang.AssertionError: expected [3] but found [1]
+	at swag.lab.tests.InventoryTests.verifyMultipleProductsAddToCart(InventoryTests.java:159)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 39 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Surefire_suite-class-failed -->
+          <div class="suite-Surefire_suite-class-skipped">
+            <div class="main-panel-header rounded-window-top">
+              <img src="skipped.png"/>
+              <span class="class-name">swag.lab.tests.OrderPlacedTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifyCheckoutCompletePage(TITLE, Checkout: Complete!)">
+                  </a> <!-- verifyCheckoutCompletePage(TITLE, Checkout: Complete!) -->
+                  <span class="method-name">verifyCheckoutCompletePage</span>
+                  <span class="parameters">(TITLE,Checkout: Complete!)</span>
+                  <div class="stack-trace">org.openqa.selenium.NoSuchWindowException: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=146.0.7680.178)
+Build info: version: &apos;4.41.0&apos;, revision: &apos;9fc754f&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.12&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [84c08e8fbddf46851108006187967827, findElement {value=checkout, using=id}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 146.0.7680.178, chrome: {chromedriverVersion: 146.0.7680.165 (4b989da09e1..., userDataDir: C:\Users\zaidm\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:63342}, goog:processID: 26976, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:63342/devtoo..., se:cdpVersion: 146.0.7680.178, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 84c08e8fbddf46851108006187967827
+	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:169)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:142)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:223)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:604)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:166)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:60)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:427)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:421)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:68)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+	at jdk.proxy2/jdk.proxy2.$Proxy20.toString(Unknown Source)
+	at java.base/java.lang.String.valueOf(String.java:4222)
+	at org.openqa.selenium.support.ui.ExpectedConditions$10.toString(ExpectedConditions.java:356)
+	at java.base/java.lang.String.valueOf(String.java:4222)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:230)
+	at swag.lab.pages.CartPage.goToCheckoutPage(CartPage.java:96)
+	at swag.lab.tests.OrderPlacedTest.setupForOrderPlced(OrderPlacedTest.java:47)
+	at swag.lab.tests.OrderPlacedTest.verifyCheckoutCompletePage(OrderPlacedTest.java:135)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 32 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Surefire_suite-class-skipped -->
+          <div class="suite-Surefire_suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">swag.lab.tests.OrderPlacedTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifyCheckoutCompletePage(BACK_HOME, inventory.html)">
+                  </a> <!-- verifyCheckoutCompletePage(BACK_HOME, inventory.html) -->
+                  <span class="method-name">verifyCheckoutCompletePage</span>
+                  <span class="parameters">(BACK_HOME,inventory.html)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifyCheckoutCompletePage(DISPATCH_TEXT, Your order has been dispatched)">
+                  </a> <!-- verifyCheckoutCompletePage(DISPATCH_TEXT, Your order has been dispatched) -->
+                  <span class="method-name">verifyCheckoutCompletePage</span>
+                  <span class="parameters">(DISPATCH_TEXT,Your order has been dispatched)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifyCheckoutCompletePage(TITLE, Checkout: Complete!)">
+                  </a> <!-- verifyCheckoutCompletePage(TITLE, Checkout: Complete!) -->
+                  <span class="method-name">verifyCheckoutCompletePage</span>
+                  <span class="parameters">(TITLE,Checkout: Complete!)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifyCheckoutCompletePage(THANK_MESSAGE, Thank you for your order!)">
+                  </a> <!-- verifyCheckoutCompletePage(THANK_MESSAGE, Thank you for your order!) -->
+                  <span class="method-name">verifyCheckoutCompletePage</span>
+                  <span class="parameters">(THANK_MESSAGE,Thank you for your order!)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifyCheckoutCompletePage(BACK_HOME, inventory.html)">
+                  </a> <!-- verifyCheckoutCompletePage(BACK_HOME, inventory.html) -->
+                  <span class="method-name">verifyCheckoutCompletePage</span>
+                  <span class="parameters">(BACK_HOME,inventory.html)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifyCheckoutCompletePage(TITLE, Checkout: Complete!)">
+                  </a> <!-- verifyCheckoutCompletePage(TITLE, Checkout: Complete!) -->
+                  <span class="method-name">verifyCheckoutCompletePage</span>
+                  <span class="parameters">(TITLE,Checkout: Complete!)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifyCheckoutCompletePage(THANK_MESSAGE, Thank you for your order!)">
+                  </a> <!-- verifyCheckoutCompletePage(THANK_MESSAGE, Thank you for your order!) -->
+                  <span class="method-name">verifyCheckoutCompletePage</span>
+                  <span class="parameters">(THANK_MESSAGE,Thank you for your order!)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifyCheckoutCompletePage(DISPATCH_TEXT, Your order has been dispatched)">
+                  </a> <!-- verifyCheckoutCompletePage(DISPATCH_TEXT, Your order has been dispatched) -->
+                  <span class="method-name">verifyCheckoutCompletePage</span>
+                  <span class="parameters">(DISPATCH_TEXT,Your order has been dispatched)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Surefire_suite-class-passed -->
+          <div class="suite-Surefire_suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">swag.lab.tests.InventoryTests</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="VerifyAllElementArePresent">
+                  </a> <!-- VerifyAllElementArePresent -->
+                  <span class="method-name">VerifyAllElementArePresent</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="VerifyCartIconIsVisible">
+                  </a> <!-- VerifyCartIconIsVisible -->
+                  <span class="method-name">VerifyCartIconIsVisible</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="VerifyHamburgerMenuIsVisible">
+                  </a> <!-- VerifyHamburgerMenuIsVisible -->
+                  <span class="method-name">VerifyHamburgerMenuIsVisible</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifyAllProductsDisplayed">
+                  </a> <!-- verifyAllProductsDisplayed -->
+                  <span class="method-name">verifyAllProductsDisplayed</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifyCartPersistenceAfterRefresh">
+                  </a> <!-- verifyCartPersistenceAfterRefresh -->
+                  <span class="method-name">verifyCartPersistenceAfterRefresh</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifyPageTitle">
+                  </a> <!-- verifyPageTitle -->
+                  <span class="method-name">verifyPageTitle</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifySingleProductAddToCart">
+                  </a> <!-- verifySingleProductAddToCart -->
+                  <span class="method-name">verifySingleProductAddToCart</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Surefire_suite-class-passed -->
+          <div class="suite-Surefire_suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">swag.lab.tests.LoginTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="invalidLoginPasswordRequired">
+                  </a> <!-- invalidLoginPasswordRequired -->
+                  <span class="method-name">invalidLoginPasswordRequired</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Surefire_suite-class-passed -->
+          <div class="suite-Surefire_suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">swag.lab.tests.CheckOutInformationTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifyAllFieldFilled">
+                  </a> <!-- verifyAllFieldFilled -->
+                  <span class="method-name">verifyAllFieldFilled</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Surefire_suite-class-passed -->
+          <div class="suite-Surefire_suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">swag.lab.tests.LogOutTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifyCartResetAfterLogout">
+                  </a> <!-- verifyCartResetAfterLogout -->
+                  <span class="method-name">verifyCartResetAfterLogout</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Surefire_suite-class-passed -->
+        </div> <!-- panel Surefire_suite -->
+        <div panel-name="test-xml-Surefire_suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <pre>
+&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
+&lt;!DOCTYPE suite SYSTEM &quot;https://testng.org/testng-1.0.dtd&quot;&gt;
+&lt;suite name=&quot;Surefire suite&quot; verbose=&quot;0&quot;&gt;
+  &lt;test thread-count=&quot;5&quot; name=&quot;Surefire test&quot; verbose=&quot;0&quot;&gt;
+    &lt;classes&gt;
+      &lt;class name=&quot;swag.lab.listeners.TestListener&quot;/&gt;
+      &lt;class name=&quot;swag.lab.listeners.TestListener_1&quot;/&gt;
+      &lt;class name=&quot;swag.lab.listeners.TestListernerParallelTesting&quot;/&gt;
+      &lt;class name=&quot;swag.lab.tests.BaseTest&quot;/&gt;
+      &lt;class name=&quot;swag.lab.tests.CartTest&quot;/&gt;
+      &lt;class name=&quot;swag.lab.tests.CheckOutInformationTest&quot;/&gt;
+      &lt;class name=&quot;swag.lab.tests.CheckoutOverviewTest&quot;/&gt;
+      &lt;class name=&quot;swag.lab.tests.InventoryTests&quot;/&gt;
+      &lt;class name=&quot;swag.lab.tests.LoginTest&quot;/&gt;
+      &lt;class name=&quot;swag.lab.tests.LogOutTest&quot;/&gt;
+      &lt;class name=&quot;swag.lab.tests.OrderPlacedTest&quot;/&gt;
+      &lt;class name=&quot;swag.lab.tests.PerformanceTest&quot;/&gt;
+    &lt;/classes&gt;
+  &lt;/test&gt; &lt;!-- Surefire test --&gt;
+&lt;/suite&gt; &lt;!-- Surefire suite --&gt;
+            </pre>
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="testlist-Surefire_suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Tests for Surefire suite</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <ul>
+              <li>
+                <span class="test-name">Surefire test (12 classes)</span>
+              </li>
+            </ul>
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="group-Surefire_suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Groups for Surefire suite</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="test-group">
+              <span class="test-group-name">Regression</span>
+              <br/>
+              <div class="method-in-group">
+                <span class="method-in-group-name">invalidLoginPasswordRequired</span>
+                <br/>
+              </div> <!-- method-in-group -->
+              <div class="method-in-group">
+                <span class="method-in-group-name">verifyAllProductsDisplayed</span>
+                <br/>
+              </div> <!-- method-in-group -->
+              <div class="method-in-group">
+                <span class="method-in-group-name">verifyCartPersistenceAfterRefresh</span>
+                <br/>
+              </div> <!-- method-in-group -->
+              <div class="method-in-group">
+                <span class="method-in-group-name">verifyMultipleProductsAddToCart</span>
+                <br/>
+              </div> <!-- method-in-group -->
+              <div class="method-in-group">
+                <span class="method-in-group-name">verifyPageTitle</span>
+                <br/>
+              </div> <!-- method-in-group -->
+              <div class="method-in-group">
+                <span class="method-in-group-name">verifySingleProductAddToCart</span>
+                <br/>
+              </div> <!-- method-in-group -->
+            </div> <!-- test-group -->
+            <div class="test-group">
+              <span class="test-group-name">login</span>
+              <br/>
+              <div class="method-in-group">
+                <span class="method-in-group-name">invalidLoginPasswordRequired</span>
+                <br/>
+              </div> <!-- method-in-group -->
+            </div> <!-- test-group -->
+            <div class="test-group">
+              <span class="test-group-name">smoke</span>
+              <br/>
+              <div class="method-in-group">
+                <span class="method-in-group-name">VerifyCartIconIsVisible</span>
+                <br/>
+              </div> <!-- method-in-group -->
+              <div class="method-in-group">
+                <span class="method-in-group-name">VerifyHamburgerMenuIsVisible</span>
+                <br/>
+              </div> <!-- method-in-group -->
+              <div class="method-in-group">
+                <span class="method-in-group-name">invalidLoginPasswordRequired</span>
+                <br/>
+              </div> <!-- method-in-group -->
+              <div class="method-in-group">
+                <span class="method-in-group-name">verifyAllProductsDisplayed</span>
+                <br/>
+              </div> <!-- method-in-group -->
+              <div class="method-in-group">
+                <span class="method-in-group-name">verifyPageTitle</span>
+                <br/>
+              </div> <!-- method-in-group -->
+              <div class="method-in-group">
+                <span class="method-in-group-name">verifySingleProductAddToCart</span>
+                <br/>
+              </div> <!-- method-in-group -->
+            </div> <!-- test-group -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="times-Surefire_suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Times for Surefire suite</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="times-div">
+              <script type="text/javascript">
+suiteTableInitFunctions.push('tableData_Surefire_suite');
+function tableData_Surefire_suite() {
+var data = new google.visualization.DataTable();
+data.addColumn('number', 'Number');
+data.addColumn('string', 'Method');
+data.addColumn('string', 'Class');
+data.addColumn('number', 'Time (ms)');
+data.addRows(25);
+data.setCell(0, 0, 0)
+data.setCell(0, 1, 'verifyCheckoutCompletePage')
+data.setCell(0, 2, 'swag.lab.tests.OrderPlacedTest')
+data.setCell(0, 3, 15029);
+data.setCell(1, 0, 1)
+data.setCell(1, 1, 'verifyCartResetAfterLogout')
+data.setCell(1, 2, 'swag.lab.tests.LogOutTest')
+data.setCell(1, 3, 12041);
+data.setCell(2, 0, 2)
+data.setCell(2, 1, 'verifyAllFieldFilled')
+data.setCell(2, 2, 'swag.lab.tests.CheckOutInformationTest')
+data.setCell(2, 3, 11403);
+data.setCell(3, 0, 3)
+data.setCell(3, 1, 'verifyCheckoutCompletePage')
+data.setCell(3, 2, 'swag.lab.tests.OrderPlacedTest')
+data.setCell(3, 3, 10954);
+data.setCell(4, 0, 4)
+data.setCell(4, 1, 'verifyCheckoutCompletePage')
+data.setCell(4, 2, 'swag.lab.tests.OrderPlacedTest')
+data.setCell(4, 3, 8432);
+data.setCell(5, 0, 5)
+data.setCell(5, 1, 'verifyCheckoutCompletePage')
+data.setCell(5, 2, 'swag.lab.tests.OrderPlacedTest')
+data.setCell(5, 3, 5609);
+data.setCell(6, 0, 6)
+data.setCell(6, 1, 'verifyCheckoutCompletePage')
+data.setCell(6, 2, 'swag.lab.tests.OrderPlacedTest')
+data.setCell(6, 3, 5499);
+data.setCell(7, 0, 7)
+data.setCell(7, 1, 'verifyCheckoutCompletePage')
+data.setCell(7, 2, 'swag.lab.tests.OrderPlacedTest')
+data.setCell(7, 3, 4893);
+data.setCell(8, 0, 8)
+data.setCell(8, 1, 'verifyCheckoutCompletePage')
+data.setCell(8, 2, 'swag.lab.tests.OrderPlacedTest')
+data.setCell(8, 3, 4172);
+data.setCell(9, 0, 9)
+data.setCell(9, 1, 'verifyCheckoutCompletePage')
+data.setCell(9, 2, 'swag.lab.tests.OrderPlacedTest')
+data.setCell(9, 3, 4170);
+data.setCell(10, 0, 10)
+data.setCell(10, 1, 'verifyCheckoutCompletePage')
+data.setCell(10, 2, 'swag.lab.tests.OrderPlacedTest')
+data.setCell(10, 3, 3721);
+data.setCell(11, 0, 11)
+data.setCell(11, 1, 'VerifyAllElementArePresent')
+data.setCell(11, 2, 'swag.lab.tests.InventoryTests')
+data.setCell(11, 3, 2381);
+data.setCell(12, 0, 12)
+data.setCell(12, 1, 'rapidRemoveClicks')
+data.setCell(12, 2, 'swag.lab.tests.InventoryTests')
+data.setCell(12, 3, 1379);
+data.setCell(13, 0, 13)
+data.setCell(13, 1, 'verifyCartPersistenceAfterRefresh')
+data.setCell(13, 2, 'swag.lab.tests.InventoryTests')
+data.setCell(13, 3, 1355);
+data.setCell(14, 0, 14)
+data.setCell(14, 1, 'invalidLoginPasswordRequired')
+data.setCell(14, 2, 'swag.lab.tests.LoginTest')
+data.setCell(14, 3, 1051);
+data.setCell(15, 0, 15)
+data.setCell(15, 1, 'verifyProductDetailsLink')
+data.setCell(15, 2, 'swag.lab.tests.CartTest')
+data.setCell(15, 3, 944);
+data.setCell(16, 0, 16)
+data.setCell(16, 1, 'verifyXSS')
+data.setCell(16, 2, 'swag.lab.tests.PerformanceTest')
+data.setCell(16, 3, 875);
+data.setCell(17, 0, 17)
+data.setCell(17, 1, 'verifyMultipleProductsAddToCart')
+data.setCell(17, 2, 'swag.lab.tests.InventoryTests')
+data.setCell(17, 3, 860);
+data.setCell(18, 0, 18)
+data.setCell(18, 1, 'verifySingleProductAddToCart')
+data.setCell(18, 2, 'swag.lab.tests.InventoryTests')
+data.setCell(18, 3, 252);
+data.setCell(19, 0, 19)
+data.setCell(19, 1, 'verifyPageTitle')
+data.setCell(19, 2, 'swag.lab.tests.InventoryTests')
+data.setCell(19, 3, 126);
+data.setCell(20, 0, 20)
+data.setCell(20, 1, 'VerifyCartIconIsVisible')
+data.setCell(20, 2, 'swag.lab.tests.InventoryTests')
+data.setCell(20, 3, 120);
+data.setCell(21, 0, 21)
+data.setCell(21, 1, 'VerifyHamburgerMenuIsVisible')
+data.setCell(21, 2, 'swag.lab.tests.InventoryTests')
+data.setCell(21, 3, 111);
+data.setCell(22, 0, 22)
+data.setCell(22, 1, 'verifyCartPageLoadTime')
+data.setCell(22, 2, 'swag.lab.tests.PerformanceTest')
+data.setCell(22, 3, 23);
+data.setCell(23, 0, 23)
+data.setCell(23, 1, 'verifyAllProductsDisplayed')
+data.setCell(23, 2, 'swag.lab.tests.InventoryTests')
+data.setCell(23, 3, 16);
+data.setCell(24, 0, 24)
+data.setCell(24, 1, 'verifyDescriptionsNotEmpty')
+data.setCell(24, 2, 'swag.lab.tests.CheckoutOverviewTest')
+data.setCell(24, 3, 0);
+window.suiteTableData['Surefire_suite']= { tableData: data, tableDiv: 'times-div-Surefire_suite'}
+return data;
+}
+              </script>
+              <span class="suite-total-time">Total running time: 1 minutes</span>
+              <div id="times-div-Surefire_suite">
+              </div> <!-- times-div-Surefire_suite -->
+            </div> <!-- times-div -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="reporter-Surefire_suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Reporter output for Surefire suite</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="ignored-methods-Surefire_suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">107 ignored methods</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="ignored-class-div">
+              <span class="ignored-class-name">swag.lab.tests.OrderPlacedTest</span>
+              <div class="ignored-methods-div">
+                <span class="ignored-method-name">verifyBackHomeButtonNavigation</span>
+                <br/>
+                <span class="ignored-method-name">verifyDispatchMessage</span>
+                <br/>
+                <span class="ignored-method-name">verifyUserStillLoggedIn</span>
+                <br/>
+                <span class="ignored-method-name">verifyThankYouMessage</span>
+                <br/>
+                <span class="ignored-method-name">tearDown</span>
+                <br/>
+                <span class="ignored-method-name">verifyPriceDisplayedUsingParameter</span>
+                <br/>
+              </div> <!-- ignored-methods-div -->
+            </div> <!-- ignored-class-div -->
+            <div class="ignored-class-div">
+              <span class="ignored-class-name">swag.lab.tests.PerformanceTest</span>
+              <div class="ignored-methods-div">
+                <span class="ignored-method-name">tearDown</span>
+                <br/>
+                <span class="ignored-method-name">verifyAddUnderSlowNetwork</span>
+                <br/>
+                <span class="ignored-method-name">accessWithoutLogin</span>
+                <br/>
+                <span class="ignored-method-name">verifyInventoryPageLoadTime</span>
+                <br/>
+                <span class="ignored-method-name">verifyResponsiveLayout</span>
+                <br/>
+                <span class="ignored-method-name">verifySessionTimeout</span>
+                <br/>
+              </div> <!-- ignored-methods-div -->
+            </div> <!-- ignored-class-div -->
+            <div class="ignored-class-div">
+              <span class="ignored-class-name">swag.lab.tests.CartTest</span>
+              <div class="ignored-methods-div">
+                <span class="ignored-method-name">verifyCartNotEmpty</span>
+                <br/>
+                <span class="ignored-method-name">verifyProductQuantityDisplayed</span>
+                <br/>
+                <span class="ignored-method-name">verifyBackButtonNavigation</span>
+                <br/>
+                <span class="ignored-method-name">verifyContinueShoppingNavigation</span>
+                <br/>
+                <span class="ignored-method-name">verifyContinueShoppingButton</span>
+                <br/>
+                <span class="ignored-method-name">verifyRemoveSingleItem</span>
+                <br/>
+                <span class="ignored-method-name">verifyProductNameDisplayed</span>
+                <br/>
+                <span class="ignored-method-name">verifyCartPageLoaded</span>
+                <br/>
+                <span class="ignored-method-name">verifyCheckoutButton</span>
+                <br/>
+                <span class="ignored-method-name">verifyMultipleProductsPresent</span>
+                <br/>
+                <span class="ignored-method-name">verifyNavigateToProductDetail</span>
+                <br/>
+                <span class="ignored-method-name">verifyRemoveButtonPresent</span>
+                <br/>
+                <span class="ignored-method-name">verifyProductDescriptionDisplayed</span>
+                <br/>
+                <span class="ignored-method-name">verifyCartItemsDisplayed</span>
+                <br/>
+                <span class="ignored-method-name">verifyRemoveMultipleItems</span>
+                <br/>
+                <span class="ignored-method-name">verifyCheckoutNavigation</span>
+                <br/>
+                <span class="ignored-method-name">verifyCartPersistenceAfterRefresh</span>
+                <br/>
+                <span class="ignored-method-name">verifyRemoveAllItems</span>
+                <br/>
+                <span class="ignored-method-name">verifyProductPriceDisplayed</span>
+                <br/>
+              </div> <!-- ignored-methods-div -->
+            </div> <!-- ignored-class-div -->
+            <div class="ignored-class-div">
+              <span class="ignored-class-name">swag.lab.tests.CheckoutOverviewTest</span>
+              <div class="ignored-methods-div">
+                <span class="ignored-method-name">verifyDecimalPriceCalculation</span>
+                <br/>
+                <span class="ignored-method-name">verifyItemPriceDisplayed</span>
+                <br/>
+                <span class="ignored-method-name">verifyPriceDisplayedUsingParameter</span>
+                <br/>
+                <span class="ignored-method-name">verifyItemNameNotEmpty</span>
+                <br/>
+                <span class="ignored-method-name">verifyQuantityNumeric</span>
+                <br/>
+                <span class="ignored-method-name">verifyPriceDisplayed</span>
+                <br/>
+                <span class="ignored-method-name">verifyFinishButton</span>
+                <br/>
+                <span class="ignored-method-name">verifyPriceDisplayedUsingDataProvider</span>
+                <br/>
+                <span class="ignored-method-name">verifyInvalidTax</span>
+                <br/>
+                <span class="ignored-method-name">verifyItemDescriptionDisplayed</span>
+                <br/>
+                <span class="ignored-method-name">verifyMultipleItemQuantity</span>
+                <br/>
+                <span class="ignored-method-name">verifyItemsDisplayed</span>
+                <br/>
+                <span class="ignored-method-name">verifyCancelButton</span>
+                <br/>
+                <span class="ignored-method-name">verifyQuantityNotZero</span>
+                <br/>
+                <span class="ignored-method-name">verifyOverviewPageLoaded</span>
+                <br/>
+                <span class="ignored-method-name">verifyLargeNumberOfItems</span>
+                <br/>
+                <span class="ignored-method-name">verifyEmptyDescription</span>
+                <br/>
+                <span class="ignored-method-name">verifyItemQuantityNotEmpty</span>
+                <br/>
+                <span class="ignored-method-name">verifyMultipleItemsDisplayed</span>
+                <br/>
+                <span class="ignored-method-name">verifyItemPriceNotEmpty</span>
+                <br/>
+                <span class="ignored-method-name">verifyTotalMismatch</span>
+                <br/>
+                <span class="ignored-method-name">verifyQuantityDisplayed</span>
+                <br/>
+                <span class="ignored-method-name">verifySingleItemQuantity</span>
+                <br/>
+                <span class="ignored-method-name">verifyInvalidSubtotal</span>
+                <br/>
+                <span class="ignored-method-name">verifyTotalCalculation</span>
+                <br/>
+                <span class="ignored-method-name">verifyItemCountMatchesCart</span>
+                <br/>
+                <span class="ignored-method-name">tearDown</span>
+                <br/>
+                <span class="ignored-method-name">verifyItemNameDisplayed</span>
+                <br/>
+                <span class="ignored-method-name">verifyItemsQuantityDisplayed</span>
+                <br/>
+                <span class="ignored-method-name">verifyFinishWithoutItems</span>
+                <br/>
+                <span class="ignored-method-name">verifyTotalCalculationValueCorrect</span>
+                <br/>
+                <span class="ignored-method-name">verifyHighPriceItems</span>
+                <br/>
+              </div> <!-- ignored-methods-div -->
+            </div> <!-- ignored-class-div -->
+            <div class="ignored-class-div">
+              <span class="ignored-class-name">swag.lab.tests.InventoryTests</span>
+              <div class="ignored-methods-div">
+                <span class="ignored-method-name">verifyCartNavigation</span>
+                <br/>
+                <span class="ignored-method-name">verifyProductPricesValid</span>
+                <br/>
+                <span class="ignored-method-name">verifySortPriceLowToHigh</span>
+                <br/>
+                <span class="ignored-method-name">VerifyProductListIsDisplayed</span>
+                <br/>
+                <span class="ignored-method-name">verifySingleInstanceInCart</span>
+                <br/>
+                <span class="ignored-method-name">tearDown</span>
+                <br/>
+                <span class="ignored-method-name">verifySortNameAscending</span>
+                <br/>
+                <span class="ignored-method-name">VerifyUserLoginAndLandToInventoryPage</span>
+                <br/>
+                <span class="ignored-method-name">verifyLongProductNames</span>
+                <br/>
+                <span class="ignored-method-name">verifyMenuOptions</span>
+                <br/>
+                <span class="ignored-method-name">verifyRapidAddClicks</span>
+                <br/>
+                <span class="ignored-method-name">verifyRemoveProductUpdatesCartCount</span>
+                <br/>
+                <span class="ignored-method-name">verifySortPriceHighToLow</span>
+                <br/>
+                <span class="ignored-method-name">verifyProductNamesUnique</span>
+                <br/>
+                <span class="ignored-method-name">verifyProductNavigation</span>
+                <br/>
+                <span class="ignored-method-name">verifyNoBrokenImages</span>
+                <br/>
+                <span class="ignored-method-name">removeNonExistingItem</span>
+                <br/>
+                <span class="ignored-method-name">verifySortNameDescending</span>
+                <br/>
+                <span class="ignored-method-name">verifyProductImagesNotBroken</span>
+                <br/>
+                <span class="ignored-method-name">verifyButtonTogglesBackToAddToCart</span>
+                <br/>
+                <span class="ignored-method-name">verifyCartPersistence</span>
+                <br/>
+              </div> <!-- ignored-methods-div -->
+            </div> <!-- ignored-class-div -->
+            <div class="ignored-class-div">
+              <span class="ignored-class-name">swag.lab.tests.CheckOutInformationTest</span>
+              <div class="ignored-methods-div">
+                <span class="ignored-method-name">verifyFirstNameFiledEmptyErrorMag</span>
+                <br/>
+                <span class="ignored-method-name">verifyPostalCodeFieldDisplayed</span>
+                <br/>
+                <span class="ignored-method-name">verifyFillingCheckoutInformationDetail</span>
+                <br/>
+                <span class="ignored-method-name">verifyFirstNameFiledEmpty</span>
+                <br/>
+                <span class="ignored-method-name">verifyLastNameFiledEmpty</span>
+                <br/>
+                <span class="ignored-method-name">verifyLastNameFiledEmptyErrorMag</span>
+                <br/>
+                <span class="ignored-method-name">verifyClickCheckoutButton</span>
+                <br/>
+                <span class="ignored-method-name">verifyCheckoutInformationPageTitle</span>
+                <br/>
+                <span class="ignored-method-name">tearDown</span>
+                <br/>
+                <span class="ignored-method-name">verifyCancelButtonDisplayed</span>
+                <br/>
+                <span class="ignored-method-name">verifyClickCancelButton</span>
+                <br/>
+                <span class="ignored-method-name">verifyPostalCodeFiledEmpty</span>
+                <br/>
+                <span class="ignored-method-name">verifyCheckoutPageLoaded</span>
+                <br/>
+                <span class="ignored-method-name">verifyLastNameFieldDisplayed</span>
+                <br/>
+                <span class="ignored-method-name">verifyContinueButtonDisplayed</span>
+                <br/>
+                <span class="ignored-method-name">verifyFirstNameFieldDisplayed</span>
+                <br/>
+              </div> <!-- ignored-methods-div -->
+            </div> <!-- ignored-class-div -->
+            <div class="ignored-class-div">
+              <span class="ignored-class-name">swag.lab.tests.LoginTest</span>
+              <div class="ignored-methods-div">
+                <span class="ignored-method-name">invalidLoginWhenUsernameAndPawordNotMatch</span>
+                <br/>
+                <span class="ignored-method-name">tearDown</span>
+                <br/>
+                <span class="ignored-method-name">validLogin</span>
+                <br/>
+                <span class="ignored-method-name">invalidLoginUsernameRequired</span>
+                <br/>
+              </div> <!-- ignored-methods-div -->
+            </div> <!-- ignored-class-div -->
+            <div class="ignored-class-div">
+              <span class="ignored-class-name">swag.lab.tests.LogOutTest</span>
+              <div class="ignored-methods-div">
+                <span class="ignored-method-name">verifyUserLogout</span>
+                <br/>
+                <span class="ignored-method-name">verifyLogout</span>
+                <br/>
+                <span class="ignored-method-name">tearDown</span>
+                <br/>
+              </div> <!-- ignored-methods-div -->
+            </div> <!-- ignored-class-div -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="chronological-Surefire_suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Methods in chronological order</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="chronological-class">
+              <div class="chronological-class-name">swag.lab.tests.CartTest</div> <!-- chronological-class-name -->
+              <div class="configuration-test before">
+                <span class="method-name">setUp</span>
+                <span class="method-start">0 ms</span>
+              </div> <!-- configuration-test before -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">swag.lab.tests.InventoryTests</div> <!-- chronological-class-name -->
+              <div class="configuration-test before">
+                <span class="method-name">setUp</span>
+                <span class="method-start">11441 ms</span>
+              </div> <!-- configuration-test before -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">swag.lab.tests.LogOutTest</div> <!-- chronological-class-name -->
+              <div class="configuration-test before">
+                <span class="method-name">setUp</span>
+                <span class="method-start">39806 ms</span>
+              </div> <!-- configuration-test before -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">swag.lab.tests.PerformanceTest</div> <!-- chronological-class-name -->
+              <div class="configuration-test before">
+                <span class="method-name">setUp</span>
+                <span class="method-start">45158 ms</span>
+              </div> <!-- configuration-test before -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">swag.lab.tests.CartTest</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">verifyProductDetailsLink</span>
+                <span class="method-start">49757 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">swag.lab.tests.CheckOutInformationTest</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">verifyAllFieldFilled</span>
+                <span class="method-start">50748 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">swag.lab.tests.InventoryTests</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">VerifyAllElementArePresent</span>
+                <span class="method-start">62233 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">VerifyCartIconIsVisible</span>
+                <span class="method-start">64635 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">VerifyHamburgerMenuIsVisible</span>
+                <span class="method-start">64771 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">rapidRemoveClicks</span>
+                <span class="method-start">64898 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">verifyAllProductsDisplayed</span>
+                <span class="method-start">66293 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">verifyCartPersistenceAfterRefresh</span>
+                <span class="method-start">66324 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">verifyMultipleProductsAddToCart</span>
+                <span class="method-start">67696 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">verifyPageTitle</span>
+                <span class="method-start">68571 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">verifySingleProductAddToCart</span>
+                <span class="method-start">68697 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">swag.lab.tests.LoginTest</div> <!-- chronological-class-name -->
+              <div class="configuration-method before">
+                <span class="method-name">setUp</span>
+                <span class="method-start">68964 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">invalidLoginPasswordRequired</span>
+                <span class="method-start">73975 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">swag.lab.tests.LogOutTest</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">verifyCartResetAfterLogout</span>
+                <span class="method-start">75048 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">swag.lab.tests.OrderPlacedTest</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">verifyCheckoutCompletePage(TITLE, Checkout: Complete!)</span>
+                <span class="method-start">87216 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">verifyCheckoutCompletePage(TITLE, Checkout: Complete!)</span>
+                <span class="method-start">102302 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">verifyCheckoutCompletePage(THANK_MESSAGE, Thank you for your order!)</span>
+                <span class="method-start">107206 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">verifyCheckoutCompletePage(DISPATCH_TEXT, Your order has been dispatched)</span>
+                <span class="method-start">111380 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">verifyCheckoutCompletePage(BACK_HOME, inventory.html)</span>
+                <span class="method-start">115554 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">verifyCheckoutCompletePage(TITLE, Checkout: Complete!)</span>
+                <span class="method-start">119283 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">verifyCheckoutCompletePage(THANK_MESSAGE, Thank you for your order!)</span>
+                <span class="method-start">124791 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">verifyCheckoutCompletePage(DISPATCH_TEXT, Your order has been dispatched)</span>
+                <span class="method-start">130407 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">verifyCheckoutCompletePage(BACK_HOME, inventory.html)</span>
+                <span class="method-start">141381 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">swag.lab.tests.PerformanceTest</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">verifyCartPageLoadTime</span>
+                <span class="method-start">149822 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">verifyXSS</span>
+                <span class="method-start">149868 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">swag.lab.tests.CartTest</div> <!-- chronological-class-name -->
+              <div class="configuration-suite after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">153917 ms</span>
+              </div> <!-- configuration-suite after -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+      </div> <!-- main-panel-root -->
+    </div> <!-- wrapper -->
+  </body>
+<script type="text/javascript" src="testng-reports2.js"></script>
+</html>

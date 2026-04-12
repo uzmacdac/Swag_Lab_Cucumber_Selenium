@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="3" total="4" passed="1" failed="0" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2026-04-12T15:49:04 IST" name="Suite" finished-at="2026-04-12T15:49:09 IST" duration-ms="5319">
+    <groups>
+      <group name="Regression">
+        <method signature="LoginTest.invalidLoginPasswordRequired()[pri:0, instance:swag.lab.tests.LoginTest@1c9b0314]" name="invalidLoginPasswordRequired" class="swag.lab.tests.LoginTest"/>
+      </group> <!-- Regression -->
+      <group name="smoke">
+        <method signature="LoginTest.invalidLoginPasswordRequired()[pri:0, instance:swag.lab.tests.LoginTest@1c9b0314]" name="invalidLoginPasswordRequired" class="swag.lab.tests.LoginTest"/>
+      </group> <!-- smoke -->
+      <group name="login">
+        <method signature="LoginTest.invalidLoginPasswordRequired()[pri:0, instance:swag.lab.tests.LoginTest@1c9b0314]" name="invalidLoginPasswordRequired" class="swag.lab.tests.LoginTest"/>
+      </group> <!-- login -->
+    </groups>
+    <test started-at="2026-04-12T15:49:04 IST" name="Submit Order Test" finished-at="2026-04-12T15:49:09 IST" duration-ms="5319">
+      <class name="swag.lab.tests.LoginTest">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:swag.lab.tests.LoginTest@1c9b0314]" started-at="2026-04-12T15:49:04 IST" name="setUp" finished-at="2026-04-12T15:49:08 IST" duration-ms="4012" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="invalidLoginPasswordRequired()[pri:0, instance:swag.lab.tests.LoginTest@1c9b0314]" started-at="2026-04-12T15:49:08 IST" name="invalidLoginPasswordRequired" finished-at="2026-04-12T15:49:09 IST" duration-ms="979" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- invalidLoginPasswordRequired -->
+      </class> <!-- swag.lab.tests.LoginTest -->
+    </test> <!-- Submit Order Test -->
+  </suite> <!-- Suite -->
+</testng-results>
