@@ -1,161 +1,287 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="20" total="29" passed="7" failed="2" skipped="0">
+<testng-results ignored="0" total="16" passed="16" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2026-04-12T17:33:30 IST" name="Suite" finished-at="2026-04-12T17:33:41 IST" duration-ms="10424">
+  <suite started-at="2026-05-21T20:03:18 IST" name="Default suite" finished-at="2026-05-21T20:05:08 IST" duration-ms="110049">
     <groups>
-      <group name="Regression">
-        <method signature="InventoryTests.verifyAllProductsDisplayed()[pri:0, instance:swag.lab.tests.InventoryTests@53bd8fca]" name="verifyAllProductsDisplayed" class="swag.lab.tests.InventoryTests"/>
-        <method signature="InventoryTests.verifyCartPersistenceAfterRefresh()[pri:0, instance:swag.lab.tests.InventoryTests@53bd8fca]" name="verifyCartPersistenceAfterRefresh" class="swag.lab.tests.InventoryTests"/>
-        <method signature="InventoryTests.verifyMultipleProductsAddToCart()[pri:0, instance:swag.lab.tests.InventoryTests@53bd8fca]" name="verifyMultipleProductsAddToCart" class="swag.lab.tests.InventoryTests"/>
-        <method signature="InventoryTests.verifyPageTitle()[pri:0, instance:swag.lab.tests.InventoryTests@53bd8fca]" name="verifyPageTitle" class="swag.lab.tests.InventoryTests"/>
-        <method signature="InventoryTests.verifySingleProductAddToCart()[pri:0, instance:swag.lab.tests.InventoryTests@53bd8fca]" name="verifySingleProductAddToCart" class="swag.lab.tests.InventoryTests"/>
-      </group> <!-- Regression -->
-      <group name="smoke">
-        <method signature="InventoryTests.VerifyCartIconIsVisible()[pri:0, instance:swag.lab.tests.InventoryTests@53bd8fca]" name="VerifyCartIconIsVisible" class="swag.lab.tests.InventoryTests"/>
-        <method signature="InventoryTests.VerifyHamburgerMenuIsVisible()[pri:0, instance:swag.lab.tests.InventoryTests@53bd8fca]" name="VerifyHamburgerMenuIsVisible" class="swag.lab.tests.InventoryTests"/>
-        <method signature="InventoryTests.verifyAllProductsDisplayed()[pri:0, instance:swag.lab.tests.InventoryTests@53bd8fca]" name="verifyAllProductsDisplayed" class="swag.lab.tests.InventoryTests"/>
-        <method signature="InventoryTests.verifyPageTitle()[pri:0, instance:swag.lab.tests.InventoryTests@53bd8fca]" name="verifyPageTitle" class="swag.lab.tests.InventoryTests"/>
-        <method signature="InventoryTests.verifySingleProductAddToCart()[pri:0, instance:swag.lab.tests.InventoryTests@53bd8fca]" name="verifySingleProductAddToCart" class="swag.lab.tests.InventoryTests"/>
-      </group> <!-- smoke -->
+      <group name="cucumber">
+        <method signature="AbstractTestNGCucumberTests.runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runners.TestNGRunner@3cce57c7]" name="runScenario" class="io.cucumber.testng.AbstractTestNGCucumberTests"/>
+      </group> <!-- cucumber -->
     </groups>
-    <test started-at="2026-04-12T17:33:30 IST" name="Submit Order Test" finished-at="2026-04-12T17:33:41 IST" duration-ms="10424">
-      <class name="swag.lab.tests.InventoryTests">
-        <test-method is-config="true" signature="setUp()[pri:0, instance:swag.lab.tests.InventoryTests@53bd8fca]" started-at="2026-04-12T17:33:30 IST" name="setUp" finished-at="2026-04-12T17:33:36 IST" duration-ms="5331" status="PASS">
+    <test started-at="2026-05-21T20:03:18 IST" name="Default test" finished-at="2026-05-21T20:05:08 IST" duration-ms="110049">
+      <class name="runners.TestNGRunner">
+        <test-method is-config="true" signature="setUpClass(org.testng.ITestContext)[pri:0, instance:runners.TestNGRunner@3cce57c7]" started-at="2026-05-21T20:03:18 IST" name="setUpClass" finished-at="2026-05-21T20:03:19 IST" duration-ms="609" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[org.testng.TestRunner@51b41740]]>
+              </value>
+            </param>
+          </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- setUp -->
-        <test-method signature="VerifyAllElementArePresent()[pri:0, instance:swag.lab.tests.InventoryTests@53bd8fca]" started-at="2026-04-12T17:33:36 IST" name="VerifyAllElementArePresent" finished-at="2026-04-12T17:33:37 IST" duration-ms="1059" status="PASS">
+        </test-method> <!-- setUpClass -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runners.TestNGRunner@3cce57c7]" started-at="2026-05-21T20:03:19 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2026-05-21T20:03:24 IST" duration-ms="5424" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Verify inventory page title"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Inventory Page Functionality"]]>
+              </value>
+            </param>
+          </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- VerifyAllElementArePresent -->
-        <test-method signature="VerifyCartIconIsVisible()[pri:0, instance:swag.lab.tests.InventoryTests@53bd8fca]" started-at="2026-04-12T17:33:37 IST" name="VerifyCartIconIsVisible" finished-at="2026-04-12T17:33:37 IST" duration-ms="63" status="PASS">
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runners.TestNGRunner@3cce57c7]" started-at="2026-05-21T20:03:24 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2026-05-21T20:03:28 IST" duration-ms="4117" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Verify product list is displayed"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Inventory Page Functionality"]]>
+              </value>
+            </param>
+          </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- VerifyCartIconIsVisible -->
-        <test-method signature="VerifyHamburgerMenuIsVisible()[pri:0, instance:swag.lab.tests.InventoryTests@53bd8fca]" started-at="2026-04-12T17:33:37 IST" name="VerifyHamburgerMenuIsVisible" finished-at="2026-04-12T17:33:37 IST" duration-ms="97" status="PASS">
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runners.TestNGRunner@3cce57c7]" started-at="2026-05-21T20:03:28 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2026-05-21T20:03:34 IST" duration-ms="5955" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Verify all product elements are present"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Inventory Page Functionality"]]>
+              </value>
+            </param>
+          </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- VerifyHamburgerMenuIsVisible -->
-        <test-method signature="rapidRemoveClicks()[pri:0, instance:swag.lab.tests.InventoryTests@53bd8fca]" started-at="2026-04-12T17:33:38 IST" name="rapidRemoveClicks" finished-at="2026-04-12T17:33:39 IST" duration-ms="1012" status="FAIL">
-          <exception class="java.lang.AssertionError">
-            <message>
-              <![CDATA[expected [0] but found [1]]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[java.lang.AssertionError: expected [0] but found [1]
-at org.testng.Assert.fail(Assert.java:111)
-at org.testng.Assert.failNotEquals(Assert.java:1590)
-at org.testng.Assert.assertEqualsImpl(Assert.java:150)
-at org.testng.Assert.assertEquals(Assert.java:132)
-at org.testng.Assert.assertEquals(Assert.java:1431)
-at org.testng.Assert.assertEquals(Assert.java:1395)
-at org.testng.Assert.assertEquals(Assert.java:1441)
-at swag.lab.tests.InventoryTests.rapidRemoveClicks(InventoryTests.java:224)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
-at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-at java.base/java.lang.reflect.Method.invoke(Method.java:568)
-at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
-at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:687)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
-at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
-at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:995)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
-at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
-at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
-at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-at org.testng.TestRunner.privateRun(TestRunner.java:741)
-at org.testng.TestRunner.run(TestRunner.java:616)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
-at org.testng.SuiteRunner.run(SuiteRunner.java:312)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
-at org.testng.TestNG.runSuites(TestNG.java:1112)
-at org.testng.TestNG.run(TestNG.java:1079)
-at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
-at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
-]]>
-            </full-stacktrace>
-          </exception> <!-- java.lang.AssertionError -->
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runners.TestNGRunner@3cce57c7]" started-at="2026-05-21T20:03:34 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2026-05-21T20:03:39 IST" duration-ms="4348" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Verify cart icon visibility"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Inventory Page Functionality"]]>
+              </value>
+            </param>
+          </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- rapidRemoveClicks -->
-        <test-method signature="verifyAllProductsDisplayed()[pri:0, instance:swag.lab.tests.InventoryTests@53bd8fca]" started-at="2026-04-12T17:33:39 IST" name="verifyAllProductsDisplayed" finished-at="2026-04-12T17:33:39 IST" duration-ms="19" status="PASS">
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runners.TestNGRunner@3cce57c7]" started-at="2026-05-21T20:03:39 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2026-05-21T20:03:43 IST" duration-ms="4205" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Verify hamburger menu visibility"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Inventory Page Functionality"]]>
+              </value>
+            </param>
+          </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- verifyAllProductsDisplayed -->
-        <test-method signature="verifyCartPersistenceAfterRefresh()[pri:0, instance:swag.lab.tests.InventoryTests@53bd8fca]" started-at="2026-04-12T17:33:39 IST" name="verifyCartPersistenceAfterRefresh" finished-at="2026-04-12T17:33:39 IST" duration-ms="344" status="PASS">
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runners.TestNGRunner@3cce57c7]" started-at="2026-05-21T20:03:43 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2026-05-21T20:03:47 IST" duration-ms="4203" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Verify all products displayed"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Inventory Page Functionality"]]>
+              </value>
+            </param>
+          </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- verifyCartPersistenceAfterRefresh -->
-        <test-method signature="verifyMultipleProductsAddToCart()[pri:0, instance:swag.lab.tests.InventoryTests@53bd8fca]" started-at="2026-04-12T17:33:40 IST" name="verifyMultipleProductsAddToCart" finished-at="2026-04-12T17:33:40 IST" duration-ms="365" status="FAIL">
-          <exception class="java.lang.AssertionError">
-            <message>
-              <![CDATA[expected [3] but found [1]]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[java.lang.AssertionError: expected [3] but found [1]
-at org.testng.Assert.fail(Assert.java:111)
-at org.testng.Assert.failNotEquals(Assert.java:1590)
-at org.testng.Assert.assertEqualsImpl(Assert.java:150)
-at org.testng.Assert.assertEquals(Assert.java:132)
-at org.testng.Assert.assertEquals(Assert.java:1431)
-at org.testng.Assert.assertEquals(Assert.java:1395)
-at org.testng.Assert.assertEquals(Assert.java:1441)
-at swag.lab.tests.InventoryTests.verifyMultipleProductsAddToCart(InventoryTests.java:159)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
-at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-at java.base/java.lang.reflect.Method.invoke(Method.java:568)
-at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
-at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:687)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
-at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
-at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:995)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
-at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
-at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
-at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-at org.testng.TestRunner.privateRun(TestRunner.java:741)
-at org.testng.TestRunner.run(TestRunner.java:616)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
-at org.testng.SuiteRunner.run(SuiteRunner.java:312)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
-at org.testng.TestNG.runSuites(TestNG.java:1112)
-at org.testng.TestNG.run(TestNG.java:1079)
-at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
-at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
-]]>
-            </full-stacktrace>
-          </exception> <!-- java.lang.AssertionError -->
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runners.TestNGRunner@3cce57c7]" started-at="2026-05-21T20:03:47 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2026-05-21T20:03:51 IST" duration-ms="4285" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Verify product names are unique"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Inventory Page Functionality"]]>
+              </value>
+            </param>
+          </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- verifyMultipleProductsAddToCart -->
-        <test-method signature="verifyPageTitle()[pri:0, instance:swag.lab.tests.InventoryTests@53bd8fca]" started-at="2026-04-12T17:33:40 IST" name="verifyPageTitle" finished-at="2026-04-12T17:33:40 IST" duration-ms="79" status="PASS">
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runners.TestNGRunner@3cce57c7]" started-at="2026-05-21T20:03:51 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2026-05-21T20:03:56 IST" duration-ms="4399" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Verify product prices are valid"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Inventory Page Functionality"]]>
+              </value>
+            </param>
+          </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- verifyPageTitle -->
-        <test-method signature="verifySingleProductAddToCart()[pri:0, instance:swag.lab.tests.InventoryTests@53bd8fca]" started-at="2026-04-12T17:33:40 IST" name="verifySingleProductAddToCart" finished-at="2026-04-12T17:33:41 IST" duration-ms="189" status="PASS">
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runners.TestNGRunner@3cce57c7]" started-at="2026-05-21T20:03:56 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2026-05-21T20:04:03 IST" duration-ms="6614" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Verify product images are not broken"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Inventory Page Functionality"]]>
+              </value>
+            </param>
+          </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- verifySingleProductAddToCart -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:swag.lab.tests.InventoryTests@53bd8fca]" started-at="2026-04-12T17:33:43 IST" name="tearDown" finished-at="2026-04-12T17:33:48 IST" duration-ms="5329" status="PASS">
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runners.TestNGRunner@3cce57c7]" started-at="2026-05-21T20:04:03 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2026-05-21T20:04:07 IST" duration-ms="4297" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Verify single product add to cart"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Inventory Page Functionality"]]>
+              </value>
+            </param>
+          </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- tearDown -->
-      </class> <!-- swag.lab.tests.InventoryTests -->
-    </test> <!-- Submit Order Test -->
-  </suite> <!-- Suite -->
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runners.TestNGRunner@3cce57c7]" started-at="2026-05-21T20:04:07 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2026-05-21T20:04:15 IST" duration-ms="7848" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Verify multiple products add to cart"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Inventory Page Functionality"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runners.TestNGRunner@3cce57c7]" started-at="2026-05-21T20:04:15 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2026-05-21T20:04:19 IST" duration-ms="4560" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Verify cart persistence after refresh"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Inventory Page Functionality"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runners.TestNGRunner@3cce57c7]" started-at="2026-05-21T20:04:19 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2026-05-21T20:04:34 IST" duration-ms="14767" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Verify remove product updates cart count"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Inventory Page Functionality"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runners.TestNGRunner@3cce57c7]" started-at="2026-05-21T20:04:34 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2026-05-21T20:04:49 IST" duration-ms="14953" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Remove non existing product"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Inventory Page Functionality"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runners.TestNGRunner@3cce57c7]" started-at="2026-05-21T20:04:49 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2026-05-21T20:05:04 IST" duration-ms="14851" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Verify rapid remove clicks"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Inventory Page Functionality"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runners.TestNGRunner@3cce57c7]" started-at="2026-05-21T20:05:04 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2026-05-21T20:05:08 IST" duration-ms="4373" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Verify button toggles back to Add To Cart"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Inventory Page Functionality"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method is-config="true" signature="tearDownClass()[pri:0, instance:runners.TestNGRunner@3cce57c7]" started-at="2026-05-21T20:05:08 IST" name="tearDownClass" finished-at="2026-05-21T20:05:08 IST" duration-ms="63" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDownClass -->
+      </class> <!-- runners.TestNGRunner -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
 </testng-results>

@@ -17,12 +17,12 @@ public class LoginTest extends BaseClass{
 
 	LoginPage loginPage;
 	
-	@BeforeMethod(alwaysRun = true)
-	public void setUp() throws IOException {
-		
-		loginPage = launchApplication();
-		
-	}
+//	@BeforeMethod(alwaysRun = true)
+//	public void setUp() throws IOException {
+//		
+//		loginPage = launchApplication();
+//		
+//	}
 	
 	@Test(enabled=false, groups = { "smoke", "Regression", "login" })
 	public void validLogin() throws IOException {

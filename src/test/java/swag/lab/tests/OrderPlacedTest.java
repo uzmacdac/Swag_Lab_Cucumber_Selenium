@@ -145,7 +145,7 @@ public class OrderPlacedTest extends BaseClass{
 	            break;
 
 	        case "DISPATCH_TEXT":
-	            Assert.assertTrue(orderPlacedPage
+	            Assert.assertTrue(orderPlacedPage 
 	                    .getDispatchText()
 	                    .contains(expectedValue));
 	            break;

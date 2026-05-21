@@ -14,7 +14,7 @@ import swag.lab.tests.BaseTest;
 import swag.lab.utils.ExtentManager;
 import swag.lab.utils.ScreenshotUtils;
 
-public class TestListernerParallelTesting implements ITestListener {
+public class TestListernerParallelTesting_Not_Using implements ITestListener {
 
     private static ExtentReports extent = ExtentManager.getInstance();
     private static ThreadLocal<ExtentTest> test = new ThreadLocal<>();

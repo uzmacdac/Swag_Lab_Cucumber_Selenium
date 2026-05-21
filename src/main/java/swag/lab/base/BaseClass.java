@@ -23,7 +23,8 @@ import swag.lab.pages.LoginPage;
 public class BaseClass {
 
 	
-	public WebDriver driver;
+	//public WebDriver driver;
+	public static WebDriver driver;
 	
 	public LoginPage loginPage;
 	

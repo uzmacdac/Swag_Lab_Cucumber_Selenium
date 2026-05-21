@@ -7,6 +7,7 @@ import java.io.IOException;
 import java.nio.file.Files;
 import java.nio.file.Paths;
 
+import org.apache.commons.io.FileUtils;
 import org.openqa.selenium.OutputType;
 import org.openqa.selenium.TakesScreenshot;
 import org.openqa.selenium.WebDriver;
@@ -56,6 +57,22 @@ public class ScreenshotUtils {
 
         return path;
     }
+    
+	
+	public String getScreenshot(String test_case_name, WebDriver driver) throws IOException {
+		
+		// 
+		TakesScreenshot ts = (TakesScreenshot) driver;
+		
+		File source = ts.getScreenshotAs(OutputType.FILE);
+		
+		File destination_file = new File("D:\\Automation_Project\\Selenium_Project\\Swag_Lab\\Screenshots\\"+test_case_name+".png");
+		
+		FileUtils.copyFile(source, destination_file);
+		
+		return "D:\\Automation_Project\\Selenium_Project\\Swag_Lab\\Screenshots\\"+test_case_name+".png";
+		
+	}
     
     
     public static String captureScreenshotParallelTesting(WebDriver driver, String testName) {
