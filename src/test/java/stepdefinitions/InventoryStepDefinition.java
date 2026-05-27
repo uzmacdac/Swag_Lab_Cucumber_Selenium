@@ -159,7 +159,14 @@ public class InventoryStepDefinition extends BaseClass {
 
 		inventoryPage = context.getInventoryPage();
 
-		Assert.assertEquals(inventoryPage.getCartCount(), expected.intValue());
+		//Assert.assertEquals(inventoryPage.getCartCount(), expected.intValue());
+		
+
+	    int actual = inventoryPage.getCartCount();
+
+	    System.out.println("Actual Cart Count = "+ actual);
+
+	    Assert.assertEquals(actual, expected.intValue());
 	}
 
 	@When("user refreshes inventory page")
@@ -186,6 +193,8 @@ public class InventoryStepDefinition extends BaseClass {
 		inventoryPage = context.getInventoryPage();
 
 		beforeCartCount = inventoryPage.getCartCount();
+		
+		 System.out.println("Before Remove Count = " + beforeCartCount);
 
 		inventoryPage.removeProductByName(product);
 	}
@@ -195,7 +204,12 @@ public class InventoryStepDefinition extends BaseClass {
 
 		inventoryPage = context.getInventoryPage();
 
-		Assert.assertEquals(inventoryPage.getCartCount(), beforeCartCount - 1);
+		//Assert.assertEquals(inventoryPage.getCartCount(), beforeCartCount - 1);
+		int afterRemove = inventoryPage.getCartCount();
+
+	    System.out.println("After Remove Count = " + afterRemove);
+
+	    Assert.assertEquals(afterRemove, beforeCartCount - 1, "Cart count did not decrease");
 	}
 
 	@Then("application should not crash")

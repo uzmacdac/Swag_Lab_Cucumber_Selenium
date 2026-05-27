@@ -110,6 +110,47 @@ Feature: Inventory Page Functionality
   Scenario: Verify sort by price high to low
     When user sorts products by "Price (high to low)"
     Then product prices should be sorted descending
+    
+   @regression
+  Scenario: Verify product navigation
+    When user clicks on product "Sauce Labs Backpack"
+    Then user should navigate to product details page
+
+  @regression
+  Scenario: Verify cart navigation
+    When user clicks on cart
+    Then user should navigate to cart page
+    
+   
+    @regression
+  Scenario: Verify menu options visibility
+    When user opens hamburger menu
+    Then all sidebar menu options should be visible
+
+  @regression
+  Scenario: Verify cart persistence after navigation
+    Given user adds product "Sauce Labs Backpack" to cart
+    When user navigates to cart and comes back
+    Then cart count should remain same
+
+  @regression
+  Scenario: Verify no broken images
+    Then inventory page should not contain broken images
+
+  @edge
+  Scenario: Verify rapid add clicks
+    When user rapidly adds product "Sauce Labs Backpack" multiple times
+    Then cart count should be 1
+
+  @edge
+  Scenario: Verify same item added multiple times
+    When user adds product "Sauce Labs Backpack" to cart
+    And user adds product "Sauce Labs Backpack" to cart
+    Then cart count should be 1
+
+  @validation
+  Scenario: Verify long product names
+    Then all product names length should be less than 100
 
    
     
