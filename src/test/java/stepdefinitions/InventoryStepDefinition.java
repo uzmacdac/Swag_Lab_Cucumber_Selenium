@@ -9,6 +9,7 @@ import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.Assert;
 
 import context.Test_Context;
+import io.cucumber.java.en.And;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
 import swag.lab.base.BaseClass;
@@ -31,6 +32,7 @@ public class InventoryStepDefinition extends BaseClass {
 		this.context = context;
 	}
 
+	
 	@Then("user should land on inventory page")
 	public void user_should_land_on_inventory_page() {
 

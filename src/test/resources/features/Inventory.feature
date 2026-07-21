@@ -121,7 +121,7 @@ Feature: Inventory Page Functionality
     When user clicks on cart
     Then user should navigate to cart page
     
-   
+   #	@fail
     @regression
   Scenario: Verify menu options visibility
     When user opens hamburger menu

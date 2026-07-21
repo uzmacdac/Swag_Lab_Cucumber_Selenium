@@ -583,11 +583,23 @@ public class InventoryPage {
 
 	// Open menu
 	public void openMenu() {
+		
+
 		// wait for menu button clickable
 		wait.until(ExpectedConditions.elementToBeClickable(menuBtn)).click();
 
 		// wait for sidebar container
 		wait.until(ExpectedConditions.visibilityOfElementLocated(By.cssSelector(".bm-menu-wrap")));
+
+	    // Wait until sidebar menu is visible
+	    wait.until(ExpectedConditions.visibilityOf(allItems));
+
+	    // Optional: wait for all menu items
+	    wait.until(ExpectedConditions.visibilityOf(about));
+	    wait.until(ExpectedConditions.visibilityOf(logout));
+	    wait.until(ExpectedConditions.visibilityOf(resetAppState));
+		
+		
 	}
 
 	public SideBarMenuPage openSideBar() {
@@ -596,7 +608,29 @@ public class InventoryPage {
 
 	// Menu options
 	public boolean isMenuOptionsVisible() {
-		return allItems.isDisplayed() && about.isDisplayed() && logout.isDisplayed() && resetAppState.isDisplayed();
+		try {
+
+	        wait.until(ExpectedConditions.visibilityOf(allItems));
+	        wait.until(ExpectedConditions.visibilityOf(about));
+	        wait.until(ExpectedConditions.visibilityOf(logout));
+	        wait.until(ExpectedConditions.visibilityOf(resetAppState));
+
+	        System.out.println(
+	                "All item Display : " + allItems.isDisplayed()
+	                + "\nAbout display : " + about.isDisplayed()
+	                + "\nLogout display : " + logout.isDisplayed()
+	                + "\nReset App display : " + resetAppState.isDisplayed());
+
+	        return allItems.isDisplayed()
+	                && about.isDisplayed()
+	                && logout.isDisplayed()
+	                && resetAppState.isDisplayed();
+
+	    } catch (Exception e) {
+
+	        System.out.println("Menu options not visible");
+	        return false;
+	    }
 	}
 
 	public void clickLogout() {

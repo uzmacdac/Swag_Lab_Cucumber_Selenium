@@ -4,6 +4,7 @@ import org.openqa.selenium.WebDriver;
 
 import swag.lab.base.BaseClass;
 import swag.lab.pages.CartPage;
+import swag.lab.pages.CheckoutOverviewPage;
 import swag.lab.pages.InventoryPage;
 import swag.lab.pages.LoginPage;
 import swag.lab.pages.ProductDetailsPage;
@@ -13,6 +14,7 @@ public class Test_Context extends BaseClass {
     private InventoryPage inventoryPage;
     private CartPage cartPage;
     private ProductDetailsPage productDetailsPage;
+    private CheckoutOverviewPage checkoutOverviewPage;
 
     public LoginPage getLoginPage() {
         return loginPage;
@@ -44,6 +46,14 @@ public class Test_Context extends BaseClass {
 
     public void setProductDetailsPage(ProductDetailsPage productDetailsPage) {
         this.productDetailsPage = productDetailsPage;
+    }
+    
+    public CheckoutOverviewPage getCheckoutOverviewPage() {
+        return checkoutOverviewPage;
+    }
+
+    public void setCheckoutOverviewPage(CheckoutOverviewPage checkoutOverviewPage) {
+        this.checkoutOverviewPage = checkoutOverviewPage;
     }
 
 }

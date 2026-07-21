@@ -6,9 +6,8 @@ import io.cucumber.testng.CucumberOptions;
 
 @CucumberOptions(
         features = "src/test/resources/features",
-        glue = "stepdefinitions",
-        //tags =  "@login",
-        tags = " @Inventory",
+        glue = "stepdefinitions",    
+        tags = "@cart",
         plugin = {
                 "pretty",
                 "html:target/cucumber-report.html",
@@ -17,5 +16,7 @@ import io.cucumber.testng.CucumberOptions;
         monochrome = true
 )
 public class TestNGRunner extends AbstractTestNGCucumberTests{
-
+	//tags =  "@login",
+    //tags = " @Inventory",
+    //tags = "@fail",
 }

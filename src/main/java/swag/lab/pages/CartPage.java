@@ -66,7 +66,7 @@ public class CartPage {
     
     
     public String getCartPageTitle() {
-    	return cartPageTitle.getText();
+    		return cartPageTitle.getText();
     }
     
     public int getCartItemsCount() {
